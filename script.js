@@ -1,7 +1,7 @@
-fetch("https://hplussport.com/api/products.php")
-.then (function (response){
-return response.json();
+fetch('https://hplussport.com/api/products?qty=2&order=name')
+.then(function(response) {
+	return response.json();
 })
-.then (function(jsonData) {
-console.log(jsonData);
+.then(function(jsonData) {
+	console.log(jsonData)
 })
